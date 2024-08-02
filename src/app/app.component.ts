@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'conditions1';
+  name = "Nammi";
+  isNammi = true;
+  
+  fun(){
+    if (this.isNammi) {
+      this.isNammi = false;
+    }
+    else{
+      this.isNammi = true;
+    }
+  }
+  value!:number;
+  value1!:string;
 }
